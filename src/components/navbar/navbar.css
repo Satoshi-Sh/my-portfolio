@@ -1,0 +1,32 @@
+.logo{
+    height:40px;
+    width:40px;
+    border-radius:50%;
+  }
+  
+  .nav {
+    background-color:rgba(128, 128, 128, 0.842);
+    padding:10px;
+    display:flex;
+    align-items: center;
+  }
+  
+  .links {
+    display:flex;
+    flex-wrap: wrap;
+    list-style-type:none;
+    justify-content: space-around;
+    gap:20px;
+    align-items: center;
+    font-size:20px;
+
+  }
+  .links li a{
+    color: black;
+    cursor:pointer;
+    text-decoration: none;
+  }
+
+  .links li a:hover{
+    color:blue;
+  }

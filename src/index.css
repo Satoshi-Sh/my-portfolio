@@ -11,3 +11,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.home, .nopage , .about, .projects  {
+  padding:20px;
+}
+
+.work-logo{
+  height:80px;
+  width:auto;
+}
+
+.img-desc{
+  width:300px;
+  margin:20px;
+  padding:20px;
+  background-color:antiquewhite;
+  border-radius:50% 50% 0 0
+}
+
+.works {
+  display:flex;
+  justify-content: space-around;
+  text-align:center;
+  flex-wrap:wrap;
+}
