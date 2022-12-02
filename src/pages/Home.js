@@ -16,7 +16,7 @@ const Home = ()=>{
       const name = key.split('.')[0]
       return(
       <div key={name} className='icon-card'>
-      <img src={value} alt={key} className='lang'>
+      <img src={value} alt={name} className='lang'>
       </img>
       <p>{name}</p>
       </div>
@@ -34,7 +34,13 @@ const Home = ()=>{
        <h1>Satoshi S.</h1>
        <div className='desc-div'>
        <img className='medium' src="images/logo.jpg" alt='logo'></img>  
-       <p className='box1 sb8'>An aspiring <span className='role'> Web Developper </span> and <span className='role'> Data Analyst </span> with an Econimics Degree.</p>
+       
+       <div class="circular-sb">
+       An aspiring <span className='role'> Web Developper </span> and <span className='role'> Data Analyst </span> with an Econimics Degree.
+<div class="circle1"></div>
+<div class="circle2"></div>
+</div>
+
        </div>
        <div className='work-div'>
           <h2>My Works</h2>
