@@ -10,13 +10,13 @@ const Nav= (props)=>{
         <div className='nav'>
            <img className='logo' src="images/logo.jpg" alt='logo'></img>
            <ul className='links'>
-                <li>
+                <li key='1'>
                     <Link to='/'>Home</Link>
                 </li>
-                <li>
+                <li key='2'>
                     <Link to='/about'>About</Link>
                 </li>
-                <li>
+                <li key='3'>
                     <Link to='/projects'>Projects</Link>
                 </li>
            </ul>

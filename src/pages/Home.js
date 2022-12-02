@@ -1,8 +1,41 @@
+function importAll(r) {
+   let images = {};
+    r.keys().forEach((item, index) => { images[item.replace('./', '')] = r(item); });
+   return images
+  }
+
 const Home = ()=>{
+   const langs = importAll(require.context('../images/languages', false, /\.(png|jpe?g|svg|webp)$/));
+   const fronts = importAll(require.context('../images/frontend', false, /\.(png|jpe?g|svg|webp)$/));
+   const backs = importAll(require.context('../images/backend', false, /\.(png|jpe?g|svg|webp)$/));
+   const tools = importAll(require.context('../images/tools', false, /\.(png|jpe?g|svg|webp)$/));
+   function createContent(obj){
+      const content = Object.entries(obj)
+      .map(([key,value]) =>
+      {
+      const name = key.split('.')[0]
+      return(
+      <div key={name} className='icon-card'>
+      <img src={value} alt={key} className='lang'>
+      </img>
+      <p>{name}</p>
+      </div>
+      )
+      })
+      return content
+   } 
+   const language = createContent(langs)
+   const frontend = createContent(fronts)
+   const backend = createContent(backs)
+   const tool = createContent(tools)
+   
     return (
     <div className="home">
        <h1>Satoshi S.</h1>
-       <p>An aspiring web developper and data analyst.</p>
+       <div className='desc-div'>
+       <img className='medium' src="images/logo.jpg" alt='logo'></img>  
+       <p className='box1 sb8'>An aspiring <span className='role'> Web Developper </span> and <span className='role'> Data Analyst </span> with an Econimics Degree.</p>
+       </div>
        <div className='work-div'>
           <h2>My Works</h2>
           <div className='works'>
@@ -33,7 +66,22 @@ const Home = ()=>{
           </div>
        </div> 
        <h2>Skills</h2>
-       
+       <h3>Programing Languages</h3>
+       <div key='1' className='langs-div'>  
+          {language}
+       </div>
+       <h3>Front End</h3>
+       <div key='2' className='langs-div'>  
+          {frontend}
+       </div>
+       <h3>Back End</h3>
+       <div key='3' className='langs-div'>  
+          {backend}
+       </div>
+       <h3>Development Tools</h3>
+       <div key='4' className='langs-div'>  
+          {tool}
+       </div>
     </div>
     )
 }

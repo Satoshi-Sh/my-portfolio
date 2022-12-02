@@ -7,6 +7,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+span {
+  display:inline-block;
+  margin:5px;
+  font-size:20px;
+  text-decoration: underline blue;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -15,6 +23,25 @@ code {
 .home, .nopage , .about, .projects  {
   padding:20px;
 }
+
+.desc{
+  font-size:20px;
+  background-color: white;
+  border: solid 2px black;
+  width:80vw;
+  padding:20px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.desc-div{
+  display:flex;
+  align-items: center;
+
+  justify-content:center;
+}
+
 
 .work-logo{
   height:80px;
@@ -34,4 +61,57 @@ code {
   justify-content: space-around;
   text-align:center;
   flex-wrap:wrap;
+}
+
+
+.lang{
+  width:auto;
+  height:60px;
+}
+
+.langs-div{
+  display:flex;
+  flex-direction: row;
+  gap:20px;
+  flex-wrap:wrap;
+
+}
+
+.icon-card{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+.box1 {
+  width: 400px;
+  margin: 30px;
+  border: 4px solid #00bfb6;
+  padding: 20px;
+  text-align: center;
+  font-weight: 900;
+  color: #00bfb6;
+  font-family: arial;
+  position: relative;
+}
+.sb8:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid #00bfb6;
+  border-top: 10px solid #00bfb6;
+  border-bottom: 10px solid transparent;
+  right: 20px;
+  bottom: -23px;
+}
+
+.medium{
+  height:120px;
+  width:auto;
+  border-radius:20px;
 }
