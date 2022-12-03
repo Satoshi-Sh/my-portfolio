@@ -28,7 +28,7 @@ const Projects = ()=>{
       {link_name='slack-mock'} 
       const name= key.split('.')[0].replace('_',' ')
       return (
-        <div>
+        <div key={name}>
         <motion.div key={name} className='project-card'
         layoutId={name} onClick={()=>{
           if(name===selectedName){
@@ -41,9 +41,9 @@ const Projects = ()=>{
             <motion.img
             src={value} alt={name} className='project'>
             </motion.img>
-            <div className="links">
-                    <div className="link"><a href={"https://github.com/Satoshi-Sh/"+link_name} target="_blank"  rel="noreferrer">View Code</a></div>
-                    <div className="link"><a href={"https://satoshi-sh.github.io/"+link_name} target="_blank"  rel="noreferrer">Live Preview</a></div>
+            <div className="links" key={name}>
+                    <div className="link" key={name+'1'}><a href={"https://github.com/Satoshi-Sh/"+link_name} target="_blank"  rel="noreferrer">View Code</a></div>
+                    <div className="link" key={name+'2'}><a href={"https://satoshi-sh.github.io/"+link_name} target="_blank"  rel="noreferrer">Live Preview</a></div>
             </div>
           </motion.div>    
           <AnimatePresence>

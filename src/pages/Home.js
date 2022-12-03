@@ -98,35 +98,39 @@ const Home = ()=>{
           </motion.div>
        </div> 
        <h2>Skills</h2>
-       <h3>Programing Languages</h3>
+       <h3 onScrollCapture={()=>{console.log('now')}}>Programing Languages</h3>
        <motion.div  
-       initial={{ opacity: 0.5, x:500 }}
+       initial={{ opacity: 0.5, x:250 }}
        transition={{duration:0.5}}
        whileInView={{ opacity: 1,x:0 }}
+       viewport={{ once: true }}
        key='1' className='langs-div'>  
           {language}
        </motion.div>
        <h3>Front End</h3>
        <motion.div
-       initial={{ opacity: 0.5, x:500 }}
+       initial={{ opacity: 0.5, x:270 }}
        transition={{duration:0.6}}
        whileInView={{ opacity: 1,x:0 }}
+       viewport={{ once: true }}
        key='2' className='langs-div'>  
           {frontend}
        </motion.div>
        <h3>Back End</h3>
        <motion.div
-       initial={{ opacity: 0.5, x:550 }}
+       initial={{ opacity: 0.5, x:280 }}
        transition={{duration:0.7}}
        whileInView={{ opacity: 1,x:0 }}
+       viewport={{ once: true }}
        key='3' className='langs-div'>  
           {backend}
        </motion.div>
        <h3>Development Tools</h3>
        <motion.div 
-       initial={{ opacity: 0.5, x:600 }}
+       initial={{ opacity: 0.5, x:250 }}
        transition={{duration:0.8}}
        whileInView={{ opacity: 1,x:0 }}
+       viewport={{ once: true }}
        key='4' className='langs-div'>  
           {tool}
        </motion.div>
