@@ -3,6 +3,7 @@ import { Outlet, Link } from "react-router-dom"
 import './navbar.css'
 
 
+
 const Nav= (props)=>{
     
     return (

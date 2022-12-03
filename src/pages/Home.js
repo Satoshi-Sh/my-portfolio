@@ -1,10 +1,15 @@
+import { motion } from "framer-motion"
+
+
 function importAll(r) {
    let images = {};
     r.keys().forEach((item, index) => { images[item.replace('./', '')] = r(item); });
    return images
   }
 
+
 const Home = ()=>{
+   
    const langs = importAll(require.context('../images/languages', false, /\.(png|jpe?g|svg|webp)$/));
    const fronts = importAll(require.context('../images/frontend', false, /\.(png|jpe?g|svg|webp)$/));
    const backs = importAll(require.context('../images/backend', false, /\.(png|jpe?g|svg|webp)$/));
@@ -15,8 +20,10 @@ const Home = ()=>{
       {
       const name = key.split('.')[0]
       return(
-      <div key={name} className='icon-card'>
-      <img src={value} alt={name} className='lang'>
+      <div key={name} 
+      className='icon-card'>
+      <img
+      src={value} alt={name} className='lang'>
       </img>
       <p>{name}</p>
       </div>
@@ -32,16 +39,16 @@ const Home = ()=>{
     return (
     <div className="home">
        <h1>Satoshi S.</h1>
-       <div className='desc-div'>
-       <img className='medium' src="images/logo.jpg" alt='logo'></img>  
-       
-       <div class="circular-sb">
-       An aspiring <span className='role'> Web Developper </span> and <span className='role'> Data Analyst </span> with an Econimics Degree.
-<div class="circle1"></div>
-<div class="circle2"></div>
-</div>
-
-       </div>
+       <motion.div initial={{ opacity: 0, y:-50 }}
+  whileInView={{ opacity: 1,y:0 }}  className='desc-div'>
+         <img className='medium' src="images/logo.jpg" alt='logo'></img>  
+         
+         <div className="circular-sb">
+         An aspiring <span className='role'> Web Developper </span> and <span className='role'> Data Analyst </span> with an Econimics Degree.
+         <div className="circle1"></div>
+         <div className="circle2"></div>
+         </div>
+       </motion.div>
        <div className='work-div'>
           <h2>My Works</h2>
           <div className='works'>
@@ -73,21 +80,37 @@ const Home = ()=>{
        </div> 
        <h2>Skills</h2>
        <h3>Programing Languages</h3>
-       <div key='1' className='langs-div'>  
+       <motion.div  
+       initial={{ opacity: 0.5, x:500 }}
+       transition={{duration:0.5}}
+       whileInView={{ opacity: 1,x:0 }}
+       key='1' className='langs-div'>  
           {language}
-       </div>
+       </motion.div>
        <h3>Front End</h3>
-       <div key='2' className='langs-div'>  
+       <motion.div
+       initial={{ opacity: 0.5, x:500 }}
+       transition={{duration:0.6}}
+       whileInView={{ opacity: 1,x:0 }}
+       key='2' className='langs-div'>  
           {frontend}
-       </div>
+       </motion.div>
        <h3>Back End</h3>
-       <div key='3' className='langs-div'>  
+       <motion.div
+       initial={{ opacity: 0.5, x:550 }}
+       transition={{duration:0.7}}
+       whileInView={{ opacity: 1,x:0 }}
+       key='3' className='langs-div'>  
           {backend}
-       </div>
+       </motion.div>
        <h3>Development Tools</h3>
-       <div key='4' className='langs-div'>  
+       <motion.div 
+       initial={{ opacity: 0.5, x:600 }}
+       transition={{duration:0.8}}
+       whileInView={{ opacity: 1,x:0 }}
+       key='4' className='langs-div'>  
           {tool}
-       </div>
+       </motion.div>
     </div>
     )
 }
