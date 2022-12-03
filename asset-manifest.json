@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.621e01bb.css",
-    "main.js": "/my-portfolio/static/js/main.5ee677c4.js",
+    "main.js": "/my-portfolio/static/js/main.a8b3ed2c.js",
     "static/js/787.128fc6e9.chunk.js": "/my-portfolio/static/js/787.128fc6e9.chunk.js",
     "static/media/Wheres_Waldo.png": "/my-portfolio/static/media/Wheres_Waldo.a4ac6dd564bbd326734e.png",
     "static/media/Memory_Card.png": "/my-portfolio/static/media/Memory_Card.79b9c9e6eff57c7f6973.png",
@@ -24,11 +24,11 @@
     "static/media/Python.svg": "/my-portfolio/static/media/Python.e6b5bdf0df1ebd61877e.svg",
     "index.html": "/my-portfolio/index.html",
     "main.621e01bb.css.map": "/my-portfolio/static/css/main.621e01bb.css.map",
-    "main.5ee677c4.js.map": "/my-portfolio/static/js/main.5ee677c4.js.map",
+    "main.a8b3ed2c.js.map": "/my-portfolio/static/js/main.a8b3ed2c.js.map",
     "787.128fc6e9.chunk.js.map": "/my-portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.621e01bb.css",
-    "static/js/main.5ee677c4.js"
+    "static/js/main.a8b3ed2c.js"
   ]
 }
