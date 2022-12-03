@@ -11,7 +11,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename='my-portfolio'>
         <Routes>
           <Route path="/" element={<Navbar />}>
             <Route index element={<Home />} />
