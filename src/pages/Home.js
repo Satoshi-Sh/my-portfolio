@@ -44,39 +44,58 @@ const Home = ()=>{
          <img className='medium' src="images/logo.jpg" alt='logo'></img>  
          
          <div className="circular-sb">
-         An aspiring <span className='role'> Web Developper </span> and <span className='role'> Data Analyst </span> with an Econimics Degree.
+         An aspiring <span className='role'> Web Developer </span> and <span className='role'> Data Analyst </span> with an Econimics Degree.
          <div className="circle1"></div>
          <div className="circle2"></div>
          </div>
        </motion.div>
        <div className='work-div'>
           <h2>My Works</h2>
-          <div className='works'>
-             <div className='img-desc'>
+          <motion.div
+          transition={{duration:1.0}}
+          initial={{ opacity:1,scale:0}}
+          whileInView={{opacity:1,scale:1,transition:{
+            delayChildren:1,
+            staggerChildren:1
+          }}
+         }
+          className='works'>
+             <motion.div initial={{y:20,opacity:0}}
+             whileInView={{y:0, opacity:1}}
+             className='img-desc'>
                 <a href="https://github.com/Satoshi-Sh/" target='_blank' rel="noreferrer">
                     <img className='work-logo' alt='github logo' src='images/github.png'></img>
                 </a>
                 <p>Github Profile</p>
-             </div>
-             <div className='img-desc'>
+             </motion.div>
+             <motion.div 
+             initial={{y:20,opacity:0}}
+             whileInView={{y:0, opacity:1}}
+             className='img-desc'>
                 <a href="https://www.kaggle.com/satoshiss" target='_blank' rel="noreferrer">
                     <img className='work-logo' alt='kaggle logo' src='images/kaggle.png'></img>
                 </a>
                 <p>Kaggle Profile</p>
-             </div>
-             <div className='img-desc'>
+             </motion.div>
+             <motion.div
+             initial={{y:20,opacity:0}}
+             whileInView={{y:0, opacity:1}}
+             className='img-desc'>
                 <a href="https://www.linkedin.com/in/satoshi-89bb58a8/" target='_blank' rel="noreferrer">
                     <img className='work-logo' alt='Linkedin logo' src='images/linkedin.png'></img>
                 </a>
                 <p>Linkedin Profile</p>
-             </div>
-             <div className='img-desc'>
+             </motion.div>
+             <motion.div
+             initial={{y:20,opacity:0}}
+             whileInView={{y:0, opacity:1}}
+             className='img-desc'>
                 <a href="https://satoshi40.pythonanywhere.com/" target='_blank' rel="noreferrer">
                     <img className='work-logo' alt='Cat logo' src='images/cat.png'></img>
                 </a>
                 <p>Django Portofolio</p>
-             </div>
-          </div>
+             </motion.div>
+          </motion.div>
        </div> 
        <h2>Skills</h2>
        <h3>Programing Languages</h3>
