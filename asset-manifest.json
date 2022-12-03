@@ -1,17 +1,20 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.621e01bb.css",
-    "main.js": "/my-portfolio/static/js/main.a8b3ed2c.js",
+    "main.js": "/my-portfolio/static/js/main.acc12430.js",
     "static/js/787.128fc6e9.chunk.js": "/my-portfolio/static/js/787.128fc6e9.chunk.js",
     "static/media/Wheres_Waldo.png": "/my-portfolio/static/media/Wheres_Waldo.a4ac6dd564bbd326734e.png",
     "static/media/Memory_Card.png": "/my-portfolio/static/media/Memory_Card.79b9c9e6eff57c7f6973.png",
     "static/media/Shopping_Cart.png": "/my-portfolio/static/media/Shopping_Cart.e4c09c935240db1a5cdc.png",
     "static/media/bootstrap.png": "/my-portfolio/static/media/bootstrap.74639664fdc9d7968597.png",
+    "static/media/kaggle.png": "/my-portfolio/static/media/kaggle.699e845f421e77352eac.png",
+    "static/media/logo.jpg": "/my-portfolio/static/media/logo.252f92cbc09e17713f79.jpg",
     "static/media/Slack_Mock.png": "/my-portfolio/static/media/Slack_Mock.9632e125b38dce125f6b.png",
     "static/media/mongoose.png": "/my-portfolio/static/media/mongoose.998152e4bc5fdd366c2c.png",
     "static/media/firebase.png": "/my-portfolio/static/media/firebase.49bc623ca721e1db5805.png",
     "static/media/pug.png": "/my-portfolio/static/media/pug.1ed4f0828e2785367ffa.png",
     "static/media/react.png": "/my-portfolio/static/media/react.6ab7e2e9a04e78b4e9c6.png",
+    "static/media/cat.png": "/my-portfolio/static/media/cat.efdb9a797d18d3084468.png",
     "static/media/Todo_List.png": "/my-portfolio/static/media/Todo_List.e8c327c962706fb45ffa.png",
     "static/media/jest.png": "/my-portfolio/static/media/jest.809768de8350fa5f6a21.png",
     "static/media/webpack.png": "/my-portfolio/static/media/webpack.73f95c1c299540c84e4b.png",
@@ -24,11 +27,11 @@
     "static/media/Python.svg": "/my-portfolio/static/media/Python.e6b5bdf0df1ebd61877e.svg",
     "index.html": "/my-portfolio/index.html",
     "main.621e01bb.css.map": "/my-portfolio/static/css/main.621e01bb.css.map",
-    "main.a8b3ed2c.js.map": "/my-portfolio/static/js/main.a8b3ed2c.js.map",
+    "main.acc12430.js.map": "/my-portfolio/static/js/main.acc12430.js.map",
     "787.128fc6e9.chunk.js.map": "/my-portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.621e01bb.css",
-    "static/js/main.a8b3ed2c.js"
+    "static/js/main.acc12430.js"
   ]
 }
