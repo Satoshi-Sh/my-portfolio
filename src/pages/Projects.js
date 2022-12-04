@@ -28,7 +28,7 @@ const Projects = ()=>{
       {link_name='slack-mock'} 
       const name= key.split('.')[0].replace('_',' ')
       return (
-        <div key={name}>
+        <div key={name} className='one-project'>
         <motion.div key={name} className='project-card'
         layoutId={name} onClick={()=>{
           if(name===selectedName){

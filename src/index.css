@@ -18,6 +18,29 @@ html,body{
   overflow-x: hidden; 
 }
 
+@media screen and (max-width: 320px){
+  .box1.sb8{
+    border:none;
+  }
+  .project-card img{
+    margin-right:-20px;
+    width:90vw;
+    height:auto;
+  }
+  .project-card{
+    width:90vw;
+    padding:0px;
+    background-color:gray;
+    border:solid 2px white;
+  }
+  .one-project .popup{
+    padding:5px; 
+    width:80%;
+    border:none;
+  }
+
+}
+
 
 body {
   margin: 0;
